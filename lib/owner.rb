@@ -73,6 +73,7 @@ class Owner
       self.dogs.delete(dog)
       dog.mood = "nervous"
       dog.owner = nil
+    end
   end
   
   def list_pets

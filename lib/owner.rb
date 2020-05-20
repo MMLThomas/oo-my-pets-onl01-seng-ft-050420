@@ -43,7 +43,7 @@ class Owner
   end
     
   def buy_cat
-    if Cat.name
+    if Cat.name?
       Cat.owner = self
     end
     
@@ -73,7 +73,8 @@ class Owner
   end
   
   def list_pets
-    
+    dogs.flatten
+    cats.flatten
   end
   
   

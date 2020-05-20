@@ -51,7 +51,6 @@ class Owner
   
   def buy_dog
       Dog.owner = self
-
   end
   
   def walk_dogs

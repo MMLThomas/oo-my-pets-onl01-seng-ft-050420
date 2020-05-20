@@ -43,15 +43,21 @@ class Owner
   end
     
   def buy_cat
+    if Cat.name
+      Cat.owner = self
+    end
     
   end
   
-  def buy_cat
+  def buy_dog
+    if Dog.name
+      Dog.owner = self
+    end
     
   end
   
   def walk_dogs
-    
+    dogs.mode =
   end
   
   def feed_cats

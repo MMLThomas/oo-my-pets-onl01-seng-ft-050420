@@ -36,13 +36,13 @@ class Owner
     @@all.clear
   end
   
-  def cats
-    @cats
-  end
+  #def cats
+   # @cats
+  #end
     
-  def dogs 
-    @dogs
-  end
+  #def dogs 
+   # @dogs
+  #end
     
   def buy_cat(name)
     name = Cat.new(name, self)

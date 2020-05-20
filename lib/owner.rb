@@ -70,8 +70,7 @@ class Owner
   end
   
   def list_pets
-    dogs.flatten
-    cats.flatten
+    "I have #{dogs.count} dogs and #{cats.count} cats."
   end
   
   

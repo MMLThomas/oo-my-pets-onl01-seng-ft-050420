@@ -50,7 +50,7 @@ class Owner
   end
   
   def buy_dog
-      Dog.owner = self
+      Dog.new = self
   end
   
   def walk_dogs

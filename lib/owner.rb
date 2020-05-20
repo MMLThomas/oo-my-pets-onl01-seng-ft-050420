@@ -7,8 +7,8 @@ class Owner
   def initialize(name)
     @name = name
     @@all << self
-    #@cats = []
-   # @dogs = []
+    @cats = []
+    @dogs = []
   end
   
   def name
@@ -44,13 +44,14 @@ class Owner
     Dog.all.each{|dog| dog.owner = self}
   end
     
-  def buy_cat
+  def buy_cat(name, self)
     Cat.new(name, self)
-    
+    @cats
   end
   
   def buy_dog(name)
-    Dog.new(name, self)
+    name = Dog.new(name, self)
+    @dogs << name
   end
   
   def walk_dogs

@@ -44,14 +44,12 @@ class Owner
     
   def buy_cat
       Cat.owner = self
-    end
     
   end
   
   def buy_dog
       Dog.owner = self
-    end
-    
+
   end
   
   def walk_dogs

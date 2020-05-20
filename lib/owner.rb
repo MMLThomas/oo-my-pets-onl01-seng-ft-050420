@@ -48,12 +48,12 @@ class Owner
     
   def buy_cat(name)
     name = Cat.new(name, self)
-    @cats << name
+    #@cats << name
   end
   
   def buy_dog(name)
     name = Dog.new(name, self)
-    @dogs << name
+    #@dogs << name
   end
   
   def walk_dogs

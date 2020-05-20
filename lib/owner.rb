@@ -34,7 +34,9 @@ class Owner
     @@all.clear
   end
   
-  def cats 
+  def cats
+    Cats.all.map{|cat| cat.owner = self}
+  end
     
   
   

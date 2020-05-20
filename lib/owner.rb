@@ -18,11 +18,11 @@ class Owner
   end
   
   def say_spicies
-    puts species
+    puts self.species
   end
   
   def self.all 
-    @all
+    @@all
   end
   
   def self.count

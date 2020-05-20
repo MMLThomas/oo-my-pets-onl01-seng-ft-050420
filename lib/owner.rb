@@ -65,8 +65,10 @@ class Owner
   
   def sell_pets
     cats.select do |cat|
-      self.cats.delete
+      self.cats.delete(dog)
       cat.mood = "nervous"
+      cat.owner = nil
+    end
     dogs.select do |dog| dog.mood = "nervous"}
   end
   

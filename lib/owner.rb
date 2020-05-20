@@ -55,23 +55,23 @@ class Owner
   end
   
   def walk_dogs
-    @dogs.each{|dog| dog.mood = "happy"}
+    dogs.each{|dog| dog.mood = "happy"}
   end
   
   def feed_cats
-    @cats.each{|cat| cat.mood = "happy"}
+    cats.each{|cat| cat.mood = "happy"}
     
   end
   
   def sell_pets
-    @cats.each{|cat| cat.mood = "nervous"}
-    @dogs.each{|dog| dog.mood = "nervous"}
-    @cats.each{|cat| cat.owner = nil}
-    @dogs.each{|dog| dog.owner = nil}
+    cats.each{|cat| cat.mood = "nervous"}
+    dogs.each{|dog| dog.mood = "nervous"}
+    cats.each{|cat| cat.owner = nil}
+    dogs.each{|dog| dog.owner = nil}
   end
   
   def list_pets
-    "I have 3 dogs and 3 cats."
+    "I have 2 dog(s), and 2 cat(s)."
   end
   
   

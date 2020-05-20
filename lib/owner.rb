@@ -37,11 +37,11 @@ class Owner
   end
   
   def cats
-    Cat.all.each{|cat| cat.owner = self}
+    @cats
   end
     
   def dogs 
-    Dog.all.each{|dog| dog.owner = self}
+    @dogs
   end
     
   def buy_cat(name)

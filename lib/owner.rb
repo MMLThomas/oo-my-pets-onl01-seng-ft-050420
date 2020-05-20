@@ -14,11 +14,12 @@ class Owner
   end
   
   def species
-     "human"
+     @species = "human"
+     @species
   end
   
   def say_species
-    puts "I am a #{self.species}."
+    "I am a #{self.species}."
   end
   
   def self.all 

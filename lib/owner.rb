@@ -43,14 +43,12 @@ class Owner
   end
     
   def buy_cat
-    if Cat.name?
       Cat.owner = self
     end
     
   end
   
   def buy_dog
-    if Dog.name
       Dog.owner = self
     end
     

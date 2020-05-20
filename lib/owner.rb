@@ -64,10 +64,10 @@ class Owner
   end
   
   def sell_pets
-    cats.select{|cat| cat.mood = "nervous"}
-    dogs.select{|dog| dog.mood = "nervous"}
-    cats.delete{|cat| cat.owner}
-    dogs.delete{|dog| dog.owner}
+    cats.select do |cat|
+      self.cats.delete
+      cat.mood = "nervous"
+    dogs.select do |dog| dog.mood = "nervous"}
   end
   
   def list_pets

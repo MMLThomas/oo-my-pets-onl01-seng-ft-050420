@@ -44,7 +44,7 @@ class Owner
     Dog.all.each{|dog| dog.owner = self}
   end
     
-  def buy_cat(name, self)
+  def buy_cat(name)
     name = Cat.new(name, self)
     @cats << name
   end
